@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="logo-con">
-            <img src="logo.jpeg" id="logo" alt="logo">
+            <img src="images/logo.jpeg" id="logo" alt="logo">
             <a class="taskbar-title">Home</a>
             <a class="taskbar-title">About us</a>
             <a class="taskbar-title">Contact us</a>
@@ -22,8 +22,56 @@
     </header>
     <div class="about-us">
         <h1 class="head">About us</h1>
-        <img src="about.webp" id="about" alt="about-us">
-    </div>
+        <!-- image slides -->
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+
+                <div class="slide first">
+                    <img src="images/img1.webp" id="about" alt="about-us">
+                </div>
+                <div class="slide">
+                    <img src="images/img2.jpeg" id="about" alt="about-us">
+                </div>
+                <div class="slide">
+                    <img src="images/img3.jpeg" id="about" alt="about-us">
+                </div>
+                <div class="slide">
+                    <img src="images/img4.jpeg" id="about" alt="about-us">
+                </div>
+                <div class="slide">
+                    <img src="images/img5.jpeg" id="about" alt="about-us">
+                </div>
+
+            </div>
+            <div class="navigation-auto">
+                <div class="auto-btn-1"></div>
+                <div class="auto-btn-2"></div>
+                <div class="auto-btn-3"></div>
+                <div class="auto-btn-4"></div>
+                <div class="auto-btn-5"></div>
     
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label> 
+            </div>
+        </div>
+        
+        <!--   -->
+        <!-- Navigation start -->
+
+    </div>
+    <div class="heading">
+        <h2>Our Story</h2>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -58,11 +58,145 @@ h1{
     align-self: center;
     text-transform: uppercase;
 }
+h1:hover{
+    color: var(--color-secondary);
+    transition: all 0.4s ease-in-out;
+}
 
 .about-us{
     align-self: center;
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.heading{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-third);
+    font-size: 50px;
+    font-weight: 700;
+
+}
+h2:hover{
+    color: var(--color-secondary);
+    transition: all 0.4s ease-in-out;
+}
+
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+
+}
+
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transform: 2s;
+    transition: all 1s ease-in-out;
+
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+    transition: all 1s ease-in-out;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+
+}
+
+.manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px ;
+}
+
+.manual-btn:hover{
+    background: black;
+
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+    transition: all 1s ease-in-out;
+}
+.navigation-auto div{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: black;
+    transition: all 2s ease-in-out;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: black;
+    transition: all 2s ease-in-out;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: black;
+    transition: all 2s ease-in-out;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: black;
+    transition: all 2s ease-in-out;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: black;
+    transition: all 2s ease-in-out;
 }
