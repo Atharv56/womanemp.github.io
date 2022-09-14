@@ -1,3 +1,5 @@
 color scheme pink, purple, blue, white
 https://womenempowerment.org
 home page, about us- mission and vision, finance, meet our team, contact us.
+Media Query - menu driven cross symbol,
+
